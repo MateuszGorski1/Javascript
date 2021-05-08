@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Kalkulator</title>
+  <meta name="description" content="Kalkulator">
+  <meta name="author" content="Mateusz Górski">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body >
+<div class="bmi-grid">
+	<form>
+	<h1> Check your BMI </h1>
+		<p><label for="height" id="text"> Height (in cm) </label></p>
+		<input type="number"  id="height"  placeholder="cm"> </button>
+		<p><label for="weight" id="text"> Weight (in kg)</label></p>
+		<input type="number" id="weight" placeholder="kg" > </button>
+		<p><input type="button" id="submit"  value="CALCULATE" onclick="calculate()">  </button></p>
+		<div id="results"> </div>
+		<div id="hints"></div>
+	</form>
+</div>
+<script type="text/javascript"  src="js/javascript.js">
+</script>
+</body>
+</html>
