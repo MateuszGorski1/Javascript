@@ -1,0 +1,179 @@
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+
+    --ff: 'Libre Franklin';
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: var(--ff),sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 375px;
+    position: relative;
+}
+
+.container h2{
+    color: var(--gray);
+    font-weight:300;
+}
+
+.container span{
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.container h3{
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.container h4{
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-top: 4rem;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.notification-container{
+    width: 100%;
+}
+
+#submit{
+    background: var(--blue);
+    width: 100%;
+    color:#fefefe;
+    font-size: 0.85rem;
+    height: 2.7rem;
+    border-radius: 30px;
+    letter-spacing: 1.5px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background: hsl(223, 97%, 53%);
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+form #email {
+    width:100%;
+    border-radius: 30px;
+    border: 1px solid var(--gray);
+    height: 2.7rem;
+    padding-left: 2rem;
+    outline: none;
+}
+
+form #submit {
+    width:100%;
+    border-radius: 30px;
+    border: 1px solid var(--gray);
+    height: 2.7rem;
+    outline: none;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.error{
+    color: red;
+    font-size: 0.8rem;
+    position: absolute;
+    display: none;
+    top: 16.8rem;
+    left: 2.2rem;
+}
+
+input:focus::placeholder{
+    color:transparent;
+}
+
+.socials{
+    margin-top: 3rem;
+}
+
+@media (min-width: 1100px){
+    .notification-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+
+    body{
+        background: hsl(0, 0%, 89%);
+    }
+
+    .container{
+        background: #fefefe;
+        border-radius: 10px;
+        padding: 3rem;
+        max-width: 1000px;
+    }
+
+    img{
+        max-width: 50%;
+        height:auto;
+        margin: 0 auto;
+    }
+
+    form{
+        width: 32rem;
+        flex-direction: row;
+    }
+
+    form #email{
+        width: 70%;
+    }
+
+    form #submit{
+        width: 30%;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+
+    .error{
+        top: 19.3rem;
+        left: 17rem;
+    }
+
+}
