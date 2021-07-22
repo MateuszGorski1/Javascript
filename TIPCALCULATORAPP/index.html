@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href=" https://fonts.google.com/specimen/Space+Mono">
+  <script src="js/main.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="img-container">
+      <img src="images/logo.svg">
+    </div>
+      <div class="content-container">
+      <div class="selection-container">
+      <h3>Bill</h3>
+       <input type="number" id="bill">
+      <h3>Select Tip %</h3>
+      <div class="choosetip-container">
+        <div class="tip-container">
+          <button id="5" onclick="active(5)" value="5">5%</button>
+        </div>
+        <div class="tip-container">
+          <button id="10" onclick="active(10)" value="10">10%</button>
+        </div>
+        <div class="tip-container">
+          <button id="15" onclick="active(15)" value="15">15%</button>
+        </div>
+        <div class="tip-container">
+          <button id="25" onclick="active(25)" value="25">25%</button>
+        </div>
+        <div class="tip-container">
+          <button id="50" onclick="active(50)" value="50">50%</button>
+        </div>
+        <div class="tip-container">
+          <input type="textarea" placeholder="Custom">
+        </div>
+      </div>
+      <h3>Number of People</h3>
+      <p class="error"></p>
+      <input type="number" id="people">
+      </div>
+      <div class="result-container">
+      <p>Tip Amount<br/>
+        <span>/ person</span></p>
+        <p class="tip-amount">$0.00</p>
+ 
+      <p>Total<br/>
+        <span>/ person</span></p>
+        <p class="total"> $0.00</p>
+        <div onclick="reset()" class="button-reset">
+        Reset
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
